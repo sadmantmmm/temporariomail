@@ -1,7 +1,5 @@
 from simple_term_menu import TerminalMenu
 import requests
-import time
-abrido = False
 print(r"""/ 
      _______.     ___       _______  .___  ___.      ___      .__   __. 
     /       |    /   \     |       \ |   \/   |     /   \     |  \ |  | 
@@ -13,8 +11,6 @@ print(r"""/
  """)
 
 url = "https://temp-mail44.p.rapidapi.com/api/v3/email/new"
-time.sleep[2]
-
 abrido = True
 payload = {
 	"key1": "value",
@@ -42,12 +38,8 @@ Caidadeentrada = requests.request("GET", mailboxx, headers=headers)
 
 terminal_menu = TerminalMenu(["criar email", "caixa de entrada"])
  
-if abrido == True:
-  choice_index = terminal_menu.show()
+choice_index = terminal_menu.show()
     
-   
-
-
 if terminal_menu.chosen_menu_entry[1]:
     print(MailCriado)
 
